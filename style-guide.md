@@ -35,3 +35,7 @@ The designs were created to the following widths:
 
 - Family: [Ubuntu](https://fonts.google.com/specimen/Ubuntu)
 - Weights: 400, 500, 700
+<!-- <style> -->
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  <!-- </style> -->
