@@ -13,6 +13,7 @@
 
 .nav-bar-container {
   background: url(../assets/images/bg-sidebar-mobile.svg) no-repeat left;
+
   /* min-width: 100vw; */
   min-height: 20vh;
 }
