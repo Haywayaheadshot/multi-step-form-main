@@ -1,10 +1,10 @@
 .nav-bar-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 20px;
-    gap: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  gap: 15px;
 }
 
 /* .nav-bar-ul-li {
@@ -12,15 +12,15 @@
 } */
 
 .nav-bar-container {
-    background: url(../assets/images/bg-sidebar-mobile.svg) repeat center;
-    min-width: 100vw;
-    min-height: 20vh;
+  background: url(../assets/images/bg-sidebar-mobile.svg) repeat center;
+  min-width: 100vw;
+  min-height: 20vh;
 }
 
 .nav-bar-btns {
-    padding: 10px 15px;
-    border-radius: 50%;
-    border: 1px solid hsl(231, 11%, 63%);
-    background-color: inherit;
-    color: hsl(0, 0%, 100%);
+  padding: 10px 15px;
+  border-radius: 50%;
+  border: 1px solid hsl(231, 11%, 63%);
+  background-color: inherit;
+  color: hsl(0, 0%, 100%);
 }
