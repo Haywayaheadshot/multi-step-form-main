@@ -45,7 +45,7 @@ export default function SecondPage() {
       </section>
       <section className="second-page-footer">
         <NavLink to="/">
-          <button className="fp-next-page-btn font" type="button">Go Back</button>
+          <button className="sp-go-back-btn font" type="button">Go Back</button>
         </NavLink>
         <NavLink to="/thirdPage">
           <button className="fp-next-page-btn font" type="button">Next Step</button>
