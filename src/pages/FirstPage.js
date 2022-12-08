@@ -25,7 +25,7 @@ export default function FirstPage() {
           </label>
         </form>
       </section>
-      <NavLink className="desktop-ul-li" to="/secondPage">
+      <NavLink className="desktop-ul-li" to="/secondPage" activeclassname="active-link">
         <section className="first-page-footer">
           <button className="fp-next-page-btn font" type="button">Next Step</button>
         </section>
