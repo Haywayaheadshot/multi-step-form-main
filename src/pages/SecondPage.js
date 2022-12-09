@@ -20,6 +20,7 @@ export default function SecondPage() {
             <div className="plan-child-details">
               <h2 className="plan-child-details-h2 font">Arcade</h2>
               <h4 className="plan-child-details-h4 font">$9/mo</h4>
+              <h4 className="yearly-discount font">2 months free</h4>
             </div>
           </section>
           <section className="select-plan-child">
@@ -27,6 +28,7 @@ export default function SecondPage() {
             <div className="plan-child-details">
               <h2 className="plan-child-details-h2 font">Advanced</h2>
               <h4 className="plan-child-details-h4 font">$12/mo</h4>
+              <h4 className="yearly-discount font">2 months free</h4>
             </div>
           </section>
           <section className="select-plan-child">
@@ -34,6 +36,7 @@ export default function SecondPage() {
             <div className="plan-child-details">
               <h2 className="plan-child-details-h2 font">Pro</h2>
               <h4 className="plan-child-details-h4 font">$15/mo</h4>
+              <h4 className="yearly-discount font">2 months free</h4>
             </div>
           </section>
           <section className="select-plan-child">
