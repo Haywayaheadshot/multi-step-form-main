@@ -1,54 +1,57 @@
 .add-ons-container {
-    display: grid;
-    gap: 20px;
+  display: grid;
+  gap: 20px;
 }
 
 .add-ons-child {
-    display: grid;
-    grid-template-columns: 1fr 3.5fr 1fr;
-    place-content: center;
-    border: 1px solid hsl(206, 94%, 87%);
-    border-radius: 5px;
-    padding: 10px 20px 10px 0;
-    /* height: max-content; */
+  display: grid;
+  grid-template-columns: 1fr 3.5fr 1fr;
+  place-content: center;
+  border: 1px solid hsl(206, 94%, 87%);
+  border-radius: 5px;
+  padding: 10px 20px 10px 0;
+
+  /* height: max-content; */
 }
 
 .third-page-checkBox {
-    max-width: 20px;
-    margin-left: 15px;
+  max-width: 20px;
+  margin-left: 15px;
 }
 
 .add-ons-package {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-    /* max-height: min-content; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* align-items: center; */
+
+  /* max-height: min-content; */
 }
 
 .add-ons-package-h4,
 .add-ons-package-h2 {
-    margin: 0;
-    padding: 0;
-    text-align: left;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
 .add-ons-package-h2 {
-    color: hsl(213, 96%, 18%);
-    font-weight: 500;
-    font-size: 1.3rem;
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+  font-size: 1.3rem;
 }
-  
+
 .add-ons-package-h4 {
-    color: hsl(231, 11%, 63%);
-    font-size: 0.8rem;
+  color: hsl(231, 11%, 63%);
+  font-size: 0.8rem;
 }
 
 .monthly-addOns {
-    color: hsl(243, 100%, 62%);
+  color: hsl(243, 100%, 62%);
 }
 
 .yearly-addOns {
-    color: hsl(243, 100%, 62%);
-    display: none;
+  color: hsl(243, 100%, 62%);
+  display: none;
 }
