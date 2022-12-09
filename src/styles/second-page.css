@@ -1,0 +1,78 @@
+.select-plan-container {
+  display: grid;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.select-plan-child {
+  border: 1px solid hsl(206, 94%, 87%);
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border-radius: 5px;
+}
+
+.plan-child-details-h2,
+.plan-child-details-h4,
+.yearly-discount {
+  margin: 0;
+  padding: 0;
+}
+
+.plan-child-details-h2 {
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+}
+
+.plan-child-details-h4 {
+  color: hsl(231, 11%, 63%);
+}
+
+.select-plan-child:nth-child(4) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  background-color: hsl(217, 100%, 97%);
+  margin: 30px 0 20px 0;
+  max-height: 4vh;
+}
+
+.second-page-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  bottom: 0;
+  padding: 40px 0;
+}
+
+.sp-go-back-btn {
+  background-color: #fff;
+  color: hsl(213, 96%, 18%);
+  border: none;
+  padding: 20px 15px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-left: 15px;
+}
+
+.select-plan-child:hover {
+  border: 1px solid hsl(213, 96%, 18%);
+  background-color: hsl(206, 94%, 87%);
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border-radius: 5px;
+}
+
+.yearly-discount {
+  display: none;
+  color: hsl(228, 100%, 84%);
+  font-weight: 400;
+}

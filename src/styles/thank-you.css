@@ -1,0 +1,26 @@
+.thank-you-div {
+  margin: 20px 15px;
+  border: 1px solid #000;
+}
+
+.thank-you-container {
+  border: 1px solid hsl(231, 11%, 63%);
+  margin: 30px 20px;
+  padding: 80px 20px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you-description {
+  text-align: center;
+  padding: 0 30px;
+
+  /* background-color: red; */
+
+  /* max-width: 250px; */
+  font-size: 1.2rem;
+}
