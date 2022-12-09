@@ -25,11 +25,12 @@ export default function FirstPage() {
           </label>
         </form>
       </section>
-      <NavLink className="desktop-ul-li" to="/secondPage" activeclassname="active-link">
-        <section className="first-page-footer">
+      <section className="first-page-footer">
+        <NavLink className="desktop-ul-li" to="/secondPage" activeclassname="active-link">
           <button className="fp-next-page-btn font" type="button">Next Step</button>
-        </section>
-      </NavLink>
+        </NavLink>
+      </section>
+
     </div>
   );
 }
