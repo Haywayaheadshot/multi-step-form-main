@@ -14,7 +14,8 @@
 }
 
 .plan-child-details-h2,
-.plan-child-details-h4 {
+.plan-child-details-h4,
+.yearly-discount {
   margin: 0;
   padding: 0;
 }
@@ -68,4 +69,10 @@
   flex-direction: row;
   gap: 20px;
   border-radius: 5px;
+}
+
+.yearly-discount {
+  display: none;
+  color: hsl(228, 100%, 84%);
+  font-weight: 400;
 }
