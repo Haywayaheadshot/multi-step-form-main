@@ -1,0 +1,24 @@
+.fourth-page-info-description {
+    font-size: 0.9rem;
+    color: hsl(231, 11%, 63%);
+}
+
+.finish-up-container {
+    background-color: red;
+}
+
+.total-amount-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lp-confirm-btn {
+    margin-right: 30px;
+    background-color: hsl(243, 100%, 62%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 20px 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
