@@ -36,7 +36,7 @@
 
 .first-page-input {
   padding: 5px 20px;
-  min-height: 40px;
+  min-height: 15px;
 }
 
 .first-page-footer {
@@ -55,7 +55,7 @@
   background-color: hsl(213, 96%, 18%);
   color: hsl(0, 0%, 100%);
   border: none;
-  padding: 20px 15px;
+  padding: 10px 15px;
   border-radius: 5px;
   font-size: 1.2rem;
 }
