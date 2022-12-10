@@ -1,0 +1,50 @@
+.switch-label {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    background-color: hsl(213, 96%, 18%);
+    border-radius: 30px;
+}
+
+.switch-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.switch-slider:before {
+   position: absolute;
+   content: "";
+   height: 12px;
+   width: 16px;
+   left: 4px;
+   bottom: 4px;
+   top: 4px;
+   background-color: hsl(0, 0%, 100%);
+   transition: 0.4s;
+   border-radius: 50%;
+}
+
+.switch-input:checked + .switch-slider {
+    position: relative;
+    height: 30px;
+    width: 26px;
+    left: 28px;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 100%);
+    transition: 0.4s;
+}
+
+/* .switch-input:checked + .switch-slider {
+    background-color: hsl(213, 96%, 18%);
+} */
