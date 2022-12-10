@@ -1,11 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../../styles/switch.css';
 
 function Switch() {
-  const [checked, setChecked] = useState({
-    checked: false,
-    setChecked: true,
-  });
   return (
     <div>
       <label htmlFor="switch" className="switch-label">
