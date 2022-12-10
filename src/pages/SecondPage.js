@@ -1,7 +1,8 @@
 import React from 'react';
-// import { Switch } from '@mui/material';
 import { NavLink } from 'react-router-dom';
+import Switch from '../components/dep/Switch';
 import '../styles/second-page.css';
+// import '../styles/switch.css';
 import selectPlan1 from '../assets/images/icon-arcade.svg';
 import selectPlan2 from '../assets/images/icon-advanced.svg';
 import selectPlan3 from '../assets/images/icon-pro.svg';
@@ -20,7 +21,7 @@ export default function SecondPage() {
             <div className="plan-child-details">
               <h2 className="plan-child-details-h2 font">Arcade</h2>
               <h4 className="plan-child-details-h4 font">$9/mo</h4>
-              <h4 className="yearly-discount font">2 months free</h4>
+              {/* <h4 className="yearly-discount font">2 months free</h4> */}
             </div>
           </section>
           <section className="select-plan-child">
@@ -28,7 +29,7 @@ export default function SecondPage() {
             <div className="plan-child-details">
               <h2 className="plan-child-details-h2 font">Advanced</h2>
               <h4 className="plan-child-details-h4 font">$12/mo</h4>
-              <h4 className="yearly-discount font">2 months free</h4>
+              {/* <h4 className="yearly-discount font">2 months free</h4> */}
             </div>
           </section>
           <section className="select-plan-child">
@@ -36,12 +37,17 @@ export default function SecondPage() {
             <div className="plan-child-details">
               <h2 className="plan-child-details-h2 font">Pro</h2>
               <h4 className="plan-child-details-h4 font">$15/mo</h4>
-              <h4 className="yearly-discount font">2 months free</h4>
+              {/* <h4 className="yearly-discount font">2 months free</h4> */}
             </div>
           </section>
           <section className="select-plan-child">
             <h4>Monthly</h4>
-            {/* <Switch defaultChecked /> */}
+            <Switch />
+            {/* <label htmlFor="switch" className="switch-label">
+              <input onClick={() => setChecked()}
+              className="switch-input" id="switch" type="checkbox" />
+              <span className="switch-slider" />
+            </label> */}
             <h4>Yearly</h4>
           </section>
         </div>
