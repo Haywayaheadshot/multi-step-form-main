@@ -72,7 +72,7 @@
 }
 
 .yearly-discount {
-  display: none;
+  /* display: none; */
   color: hsl(228, 100%, 84%);
   font-weight: 400;
 }
