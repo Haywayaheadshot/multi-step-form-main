@@ -19,7 +19,6 @@ export default function ThirdPage() {
             </div>
             <div>
               <h4 className="monthly-addOns font">+$1/mo</h4>
-              <h4 className="yearly-addOns font">+$10/yr</h4>
             </div>
           </section>
           <section className="add-ons-child">
@@ -30,7 +29,6 @@ export default function ThirdPage() {
             </div>
             <div>
               <h4 className="monthly-addOns font">+$2/mo</h4>
-              <h4 className="yearly-addOns font">+$20/yr</h4>
             </div>
           </section>
           <section className="add-ons-child">
@@ -41,7 +39,6 @@ export default function ThirdPage() {
             </div>
             <div>
               <h4 className="monthly-addOns font">+$2/mo</h4>
-              <h4 className="yearly-addOns font">+$20/yr</h4>
             </div>
           </section>
         </div>
