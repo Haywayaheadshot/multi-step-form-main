@@ -47,7 +47,7 @@ export default function ThirdPageYearly() {
         <NavLink to="/secondPage">
           <button className="sp-go-back-btn font" type="button">Go Back</button>
         </NavLink>
-        <NavLink to="/fourthPage">
+        <NavLink to="/fourthPageYearly">
           <button className="fp-next-page-btn font" type="button">Next Step</button>
         </NavLink>
       </section>
