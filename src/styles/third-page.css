@@ -53,5 +53,6 @@
 
 .yearly-addOns {
   color: hsl(243, 100%, 62%);
-  display: none;
+
+  /* display: none; */
 }

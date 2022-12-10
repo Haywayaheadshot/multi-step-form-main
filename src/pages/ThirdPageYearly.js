@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import '../styles/third-page.css';
 
-export default function ThirdPage() {
+export default function ThirdPageYearly() {
   return (
     <div className="page-container">
       <section className="first-page-container">
@@ -18,7 +18,7 @@ export default function ThirdPage() {
               <h4 className="add-ons-package-h4 font">Access to multiplayer games</h4>
             </div>
             <div>
-              <h4 className="monthly-addOns font">+$1/mo</h4>
+              <h4 className="yearly-addOns font">+$10/yr</h4>
             </div>
           </section>
           <section className="add-ons-child">
@@ -28,7 +28,7 @@ export default function ThirdPage() {
               <h4 className="add-ons-package-h4 font">Extra 1TB of cloud save</h4>
             </div>
             <div>
-              <h4 className="monthly-addOns font">+$2/mo</h4>
+              <h4 className="yearly-addOns font">+$20/yr</h4>
             </div>
           </section>
           <section className="add-ons-child">
@@ -38,7 +38,7 @@ export default function ThirdPage() {
               <h4 className="add-ons-package-h4 font">Custom theme on your profile</h4>
             </div>
             <div>
-              <h4 className="monthly-addOns font">+$2/mo</h4>
+              <h4 className="yearly-addOns font">+$20/yr</h4>
             </div>
           </section>
         </div>
@@ -47,7 +47,7 @@ export default function ThirdPage() {
         <NavLink to="/secondPage">
           <button className="sp-go-back-btn font" type="button">Go Back</button>
         </NavLink>
-        <NavLink to="/fourthPage">
+        <NavLink to="/fourthPageYearly">
           <button className="fp-next-page-btn font" type="button">Next Step</button>
         </NavLink>
       </section>
