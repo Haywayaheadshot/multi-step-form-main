@@ -5,7 +5,8 @@ import { useSelector } from 'react-redux';
 import '../styles/fourth-page.css';
 
 export default function FourthPage() {
-  const defaultPlanState = useSelector((state) => state.defaultPlanState);
+  const plans = useSelector((state) => state.plans);
+  console.log(plans);
   return (
     <div className="page-container">
       <section className="first-page-container">
@@ -15,7 +16,7 @@ export default function FourthPage() {
         </p>
         <div className="finish-up-container">
           <section>
-            <h1>{defaultPlanState}</h1>
+            <h1>{plans[0].plan}</h1>
           </section>
           <section>
             <h1>Plan</h1>
