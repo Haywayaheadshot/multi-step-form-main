@@ -14,6 +14,7 @@ const defaultPlanState = [
 
 export default function planReducer(state = defaultPlanState, action) {
   switch (action.type) {
+    default: return state;
     case ADD_PLAN:
       return [
         ...state,
