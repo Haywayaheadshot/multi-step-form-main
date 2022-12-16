@@ -1,8 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+// import PropTypes from 'prop-types';
 import '../styles/fourth-page.css';
 
 export default function FourthPage() {
+  const defaultPlanState = useSelector((state) => state.defaultPlanState);
   return (
     <div className="page-container">
       <section className="first-page-container">
@@ -12,7 +15,7 @@ export default function FourthPage() {
         </p>
         <div className="finish-up-container">
           <section>
-            <h1>Plan</h1>
+            <h1>{defaultPlanState}</h1>
           </section>
           <section>
             <h1>Plan</h1>
@@ -37,3 +40,7 @@ export default function FourthPage() {
     </div>
   );
 }
+
+// FourthPage.propTypes = {
+//   plan: PropTypes.string.isRequired,
+// };
