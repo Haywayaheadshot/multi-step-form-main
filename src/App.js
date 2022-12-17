@@ -7,13 +7,15 @@ import FourthPageYearly from './pages/FourthPageYearly';
 import FourthPage from './pages/FourthPage';
 import './styles/App.css';
 import NavBar from './components/NavBar';
+import Switch from './components/dep/Switch';
 import ThankYou from './pages/ThankYou';
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div id="App-1" className="App">
         <NavBar />
+        <Switch />
         {/* <section className="App-main"> */}
         <Routes>
           <Route exact path="/" element={<FirstPage />} />
