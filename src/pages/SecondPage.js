@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-// import Switch from '../components/dep/Switch';
 import '../styles/second-page.css';
-import '../styles/switch.css';
 import selectPlan1 from '../assets/images/icon-arcade.svg';
 import selectPlan2 from '../assets/images/icon-advanced.svg';
 import selectPlan3 from '../assets/images/icon-pro.svg';
@@ -58,7 +56,6 @@ export default function SecondPage() {
           </section>
           <section className="select-plan-child">
             <h4>Monthly</h4>
-            {/* <Switch /> */}
             <label htmlFor="switch" className="switch-label">
               <input
                 onClick={() => setChecked((checked) => !checked)}
