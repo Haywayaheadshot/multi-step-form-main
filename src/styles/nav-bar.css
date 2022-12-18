@@ -16,6 +16,7 @@
   background: url(../assets/images/bg-sidebar-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
+
   /* min-width: 100vw; */
   min-height: 20vh;
 }
