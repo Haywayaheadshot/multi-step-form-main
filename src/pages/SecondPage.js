@@ -6,7 +6,7 @@ import selectPlan2 from '../assets/images/icon-advanced.svg';
 import selectPlan3 from '../assets/images/icon-pro.svg';
 
 export default function SecondPage() {
-  const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState();
   return (
     <div className="page-container">
       <section className="first-page-container">
