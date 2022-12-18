@@ -29,6 +29,10 @@
   color: hsl(206, 94%, 87%);
 }
 
+.night .plan-child-details-h2 .active {
+  background-color: red;
+}
+
 .plan-child-details-h4 {
   color: hsl(231, 11%, 63%);
 }
