@@ -1,5 +1,4 @@
 .switch-label-app {
-  position: relative;
   display: inline-block;
   width: 80px;
   height: 40px;
@@ -62,7 +61,8 @@
 }
 
 .day {
-  background-color: hsl(206, 94%, 87%);
+  /* background-color: hsl(206, 94%, 87%); */
+  background-color: hsl(229, 24%, 87%);
 }
 
 /* .switch-input:checked + .switch-slider {
