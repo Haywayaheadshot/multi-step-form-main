@@ -13,6 +13,10 @@
   border-radius: 5px;
 }
 
+.night .select-plan-child:hover {
+  background-color: hsl(229, 24%, 87%);
+}
+
 .plan-child-details-h2,
 .plan-child-details-h4,
 .yearly-discount {
@@ -29,12 +33,16 @@
   color: hsl(206, 94%, 87%);
 }
 
-.night .plan-child-details-h2 .active {
-  background-color: red;
+.night .select-plan-child:hover .plan-child-details-h2 {
+  color: hsl(354, 84%, 57%);
 }
 
 .plan-child-details-h4 {
   color: hsl(231, 11%, 63%);
+}
+
+.night .select-plan-child:hover .plan-child-details-h4 {
+  color: hsl(213, 96%, 18%);
 }
 
 .select-plan-child:nth-child(4) {
@@ -97,6 +105,10 @@
   /* display: none; */
   color: hsl(228, 100%, 84%);
   font-weight: 400;
+}
+
+.night .select-plan-child:hover .yearly-discount {
+  color: hsl(213, 96%, 18%);
 }
 
 .switch-label {
