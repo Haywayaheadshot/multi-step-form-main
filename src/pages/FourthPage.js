@@ -14,14 +14,26 @@ export default function FourthPage() {
           Double-check everything looks OK before confirming.
         </p>
         <div className="finish-up-container">
-          <section>
-            <h1>{plans[0].plan}</h1>
+          <section className="finish-up-container-section">
+            <h1 className="selected-plan font">
+              {plans[0].plan}
+              (Monthly)
+              <br />
+              <NavLink to="/secondPage">
+                <span className="selected-plan-change font">Change</span>
+              </NavLink>
+            </h1>
+            <section className="selected-plan-amount font">
+              $
+              {plans[0].amount}
+              /mo
+            </section>
           </section>
-          <section>
-            <h1>Plan</h1>
+          <section className="finish-up-container-section">
+            <h1 className="selected-plan-addOn font">Online service</h1>
           </section>
-          <section>
-            <h1>Plan</h1>
+          <section className="finish-up-container-section">
+            <h1 className="selected-plan-addOn font">Local storage</h1>
           </section>
         </div>
         <section className="total-amount-div font">
