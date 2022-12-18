@@ -20,6 +20,10 @@
   min-height: 20vh;
 }
 
+.night .nav-bar-container {
+  background: hsl(213, 96%, 18%);
+}
+
 .nav-bar-btns {
   padding: 10px 15px;
   border-radius: 50%;
@@ -44,7 +48,7 @@
   color: hsl(213, 96%, 18%);
 } */
 
-.active {
+.active .nav-bar-btns {
   border-radius: 50%;
   border: 1px solid hsl(231, 11%, 63%);
   background-color: hsl(206, 94%, 87%);
