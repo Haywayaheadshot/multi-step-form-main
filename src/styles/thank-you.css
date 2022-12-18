@@ -15,6 +15,10 @@
   align-items: center;
 }
 
+.night .thank-you-container {
+  background-color: rgb(20, 15, 15);
+}
+
 .thank-you-description {
   text-align: center;
   padding: 0 30px;
@@ -23,4 +27,15 @@
 
   /* max-width: 250px; */
   font-size: 1.2rem;
+}
+
+.night .thank-you-description,
+.night .thank-you-header {
+  color: #fff;
+}
+
+.thank-you-home {
+  margin: 5vh 0 -40px 0;
+  padding: 10px 15px;
+  font-size: 0.8rem;
 }
