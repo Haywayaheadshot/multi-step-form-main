@@ -13,10 +13,6 @@
   border-radius: 5px;
 }
 
-.night .select-plan-child:hover {
-  background-color: hsl(229, 24%, 87%);
-}
-
 .plan-child-details-h2,
 .plan-child-details-h4,
 .yearly-discount {
@@ -97,6 +93,10 @@
   border-radius: 5px;
 }
 
+.night .select-plan-child:hover {
+  background-color: hsl(229, 24%, 87%);
+}
+
 .night .select-plan-child:nth-child(4) {
   background-color: hsl(231, 11%, 63%);
 }
@@ -161,4 +161,3 @@
 /* .switch-input:checked + .switch-slider {
     background-color: hsl(213, 96%, 18%);
 } */
-
