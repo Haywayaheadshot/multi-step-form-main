@@ -3,7 +3,7 @@
   display: inline-block;
   width: 80px;
   height: 40px;
-  background-color: hsl(354, 84%, 57%);
+  background-color: hsl(206, 94%, 87%);
   border-radius: 30px;
   position: fixed;
   top: 2vh;
@@ -51,6 +51,14 @@
 
 .night {
   background-color: rgb(20, 15, 15);
+}
+
+.night .switch-label-app {
+  background-color: rgb(20, 15, 15);
+}
+
+.night .switch-slider-app::before {
+  background-color: #fff;
 }
 
 .day {

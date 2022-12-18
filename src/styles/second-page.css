@@ -25,6 +25,10 @@
   font-weight: 500;
 }
 
+.night .plan-child-details-h2 {
+  color: hsl(206, 94%, 87%);
+}
+
 .plan-child-details-h4 {
   color: hsl(231, 11%, 63%);
 }
@@ -51,6 +55,11 @@
   padding: 40px 0;
 }
 
+.night .second-page-footer {
+  background-color: rgb(20, 15, 15);
+  border-top: 1px solid hsl(0, 0%, 100%);
+}
+
 .sp-go-back-btn {
   background-color: #fff;
   color: hsl(213, 96%, 18%);
@@ -61,6 +70,11 @@
   margin-left: 15px;
 }
 
+.night .sp-go-back-btn {
+  background-color: rgb(20, 15, 15);
+  color: hsl(0, 0%, 100%);
+}
+
 .select-plan-child:hover {
   border: 1px solid hsl(213, 96%, 18%);
   background-color: hsl(206, 94%, 87%);
@@ -69,6 +83,10 @@
   flex-direction: row;
   gap: 20px;
   border-radius: 5px;
+}
+
+.night .select-plan-child:nth-child(4) {
+  background-color: hsl(231, 11%, 63%);
 }
 
 .yearly-discount {

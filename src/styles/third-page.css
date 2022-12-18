@@ -42,6 +42,10 @@
   font-size: 1.3rem;
 }
 
+.night .add-ons-package-h2 {
+  color:hsl(206, 94%, 87%);
+}
+
 .add-ons-package-h4 {
   color: hsl(231, 11%, 63%);
   font-size: 0.8rem;
