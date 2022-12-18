@@ -6,7 +6,6 @@ import '../styles/fourth-page.css';
 
 export default function FourthPage() {
   const plans = useSelector((state) => state.plans);
-  console.log(plans);
   return (
     <div className="page-container">
       <section className="first-page-container">
