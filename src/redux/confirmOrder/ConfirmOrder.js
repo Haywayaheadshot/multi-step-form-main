@@ -9,6 +9,7 @@ const defaultPlanState = [
   {
     id: 1,
     plan: 'Arcade',
+    amount: '9',
   },
 ];
 
