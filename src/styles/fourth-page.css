@@ -4,7 +4,50 @@
 }
 
 .finish-up-container {
-  background-color: red;
+  background-color: hsl(229, 24%, 87%);
+  padding: 3px 20px;
+}
+
+.night .finish-up-container {
+  background-color: hsl(213, 96%, 18%);
+}
+
+.selected-plan {
+  color: hsl(213, 96%, 18%);
+}
+
+.selected-plan-amount {
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+}
+
+.night .selected-plan,
+.night .selected-plan-amount {
+  color: hsl(229, 24%, 87%);
+}
+
+.selected-plan-change {
+  color: hsl(231, 11%, 63%);
+}
+
+.selected-plan-addOn {
+  color: hsl(231, 11%, 63%);
+  font-weight: 400;
+}
+
+.night .selected-plan-addOn {
+  color: hsl(217, 100%, 97%);
+}
+
+.finish-up-container-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.finish-up-container-section:nth-child(1) {
+  border-bottom: 1px solid hsl(231, 11%, 63%);
 }
 
 .total-amount-div {
