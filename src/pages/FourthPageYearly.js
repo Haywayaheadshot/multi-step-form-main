@@ -1,9 +1,11 @@
 import React from 'react';
 // import { PropTypes } from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import '../styles/fourth-page.css';
 
 export default function FourthPageYearly() {
+  const plans = useSelector((state) => state.plans);
   return (
     <div className="page-container">
       <section className="first-page-container">
@@ -12,13 +14,25 @@ export default function FourthPageYearly() {
           Double-check everything looks OK before confirming.
         </p>
         <div className="finish-up-container">
-          <section>
+          <section className="finish-up-container-section">
+            <h1 className="selected-plan font">
+              {plans[0].plan}
+              (Yearly)
+              <br />
+              <NavLink to="/secondPage">
+                <span className="selected-plan-change font">Change</span>
+              </NavLink>
+            </h1>
+            <section className="selected-plan-amount font">
+              $
+              {plans[0].amount}
+              /yr
+            </section>
+          </section>
+          <section className="finish-up-container-section">
             <h1>Plan</h1>
           </section>
-          <section>
-            <h1>Plan</h1>
-          </section>
-          <section>
+          <section className="finish-up-container-section">
             <h1>Plan</h1>
           </section>
         </div>
