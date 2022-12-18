@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import thankYou from '../assets/images/icon-thank-you.svg';
 import '../styles/thank-you.css';
 
@@ -14,6 +15,11 @@ export default function ThankYou() {
           to email us at haywayaheadshotstrategy.
           fx@gmail.com.
         </p>
+        <NavLink to="/">
+          <button className="thank-you-home" type="button">
+            Home
+          </button>
+        </NavLink>
       </section>
     </div>
   );
