@@ -14,21 +14,23 @@ export default function FourthPageYearly() {
           Double-check everything looks OK before confirming.
         </p>
         <div className="finish-up-container">
-          <section className="finish-up-container-section">
-            <h1 className="selected-plan font">
-              {plans[0].plan}
-              (Yearly)
-              <br />
-              <NavLink to="/secondPage">
-                <span className="selected-plan-change font">Change</span>
-              </NavLink>
-            </h1>
-            <section className="selected-plan-amount font">
-              $
-              {plans[0].amount}
-              /yr
+          { plans.map((plan) => (
+            <section key="index" className="finish-up-container-section">
+              <h1 className="selected-plan font">
+                {plan.plan}
+                (Monthly)
+                <br />
+                <NavLink to="/secondPage">
+                  <span className="selected-plan-change font">Change</span>
+                </NavLink>
+              </h1>
+              <section className="selected-plan-amount font">
+                $
+                {plan.amount}
+                /mo
+              </section>
             </section>
-          </section>
+          ))}
           <section className="finish-up-container-section">
             <h1>Plan</h1>
           </section>
@@ -37,7 +39,7 @@ export default function FourthPageYearly() {
           </section>
         </div>
         <section className="total-amount-div font">
-          Total (per month)
+          Total (per year)
           <span className="font">+$12/month</span>
         </section>
       </section>
