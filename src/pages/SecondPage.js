@@ -1,12 +1,64 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import '../styles/second-page.css';
 import selectPlan1 from '../assets/images/icon-arcade.svg';
 import selectPlan2 from '../assets/images/icon-advanced.svg';
 import selectPlan3 from '../assets/images/icon-pro.svg';
+import { addPlan } from '../redux/confirmOrder/ConfirmOrder';
 
 export default function SecondPage() {
   const [checked, setChecked] = useState();
+  const dispatch = useDispatch();
+
+  const handleSelectedPlan = (key) => {
+    if (key.target.id) {
+      if (key.target.id === 'sp-one') {
+        if (checked) {
+          dispatch(addPlan({
+            id: 'sp-one',
+            plan: 'Arcade',
+            amount: '90',
+          }));
+        } else {
+          dispatch(addPlan({
+            id: 'sp-one',
+            plan: 'Arcade',
+            amount: '9',
+          }));
+        }
+      } else if (key.target.id === 'sp-two') {
+        if (checked) {
+          dispatch(addPlan({
+            id: 'sp-two',
+            plan: 'Advanced',
+            amount: '120',
+          }));
+        } else {
+          dispatch(addPlan({
+            id: 'sp-two',
+            plan: 'Advanced',
+            amount: '12',
+          }));
+        }
+      } if (key.target.id === 'sp-three') {
+        if (checked) {
+          dispatch(addPlan({
+            id: 'sp-three',
+            plan: 'Pro',
+            amount: '150',
+          }));
+        } else {
+          dispatch(addPlan({
+            id: 'sp-three',
+            plan: 'Pro',
+            amount: '15',
+          }));
+        }
+      }
+    }
+  };
+
   return (
     <div className="page-container">
       <section className="first-page-container">
@@ -15,7 +67,7 @@ export default function SecondPage() {
           You have the option of monthly or yearly billing.
         </p>
         <div className="select-plan-container">
-          <section className="select-plan-child">
+          <section role="presentation" className="select-plan-child" key="sp-one" id="sp-one" onClick={handleSelectedPlan}>
             <img src={selectPlan1} alt="Arcade Plan" />
             <div className="plan-child-details">
               <h2 className="plan-child-details-h2 font">Arcade</h2>
@@ -28,7 +80,7 @@ export default function SecondPage() {
               ) }
             </div>
           </section>
-          <section className="select-plan-child">
+          <section role="presentation" className="select-plan-child" key="sp-two" id="sp-two" onClick={handleSelectedPlan}>
             <img src={selectPlan2} alt="Advanced Plan" />
             <div className="plan-child-details">
               <h2 className="plan-child-details-h2 font">Advanced</h2>
@@ -41,7 +93,7 @@ export default function SecondPage() {
               ) }
             </div>
           </section>
-          <section className="select-plan-child">
+          <section role="presentation" className="select-plan-child" key="sp-three" id="sp-three" onClick={handleSelectedPlan}>
             <img src={selectPlan3} alt="Pro Plan" />
             <div className="plan-child-details">
               <h2 className="plan-child-details-h2 font">Pro</h2>
