@@ -6,6 +6,8 @@ import '../styles/fourth-page.css';
 
 export default function FourthPage() {
   const plans = useSelector((state) => state.plans);
+
+  const addOns = useSelector((state) => state.addOns);
   return (
     <div className="page-container">
       <section className="first-page-container">
@@ -14,27 +16,29 @@ export default function FourthPage() {
           Double-check everything looks OK before confirming.
         </p>
         <div className="finish-up-container">
-          <section className="finish-up-container-section">
-            <h1 className="selected-plan font">
-              {plans[0].plan}
-              (Monthly)
-              <br />
-              <NavLink to="/secondPage">
-                <span className="selected-plan-change font">Change</span>
-              </NavLink>
-            </h1>
-            <section className="selected-plan-amount font">
-              $
-              {plans[0].amount}
-              /mo
+          { plans.map((plan) => (
+            <section key={plan.id} className="finish-up-container-section">
+              <h1 className="selected-plan font">
+                {plan.plan}
+                (Monthly)
+                <br />
+                <NavLink to="/secondPage">
+                  <span className="selected-plan-change font">Change</span>
+                </NavLink>
+              </h1>
+              <section className="selected-plan-amount font">
+                $
+                {plan.amount}
+                /mo
+              </section>
             </section>
-          </section>
-          <section className="finish-up-container-section">
-            <h1 className="selected-plan-addOn font">Online service</h1>
-          </section>
-          <section className="finish-up-container-section">
-            <h1 className="selected-plan-addOn font">Local storage</h1>
-          </section>
+          ))}
+          { addOns.map((addOn) => (
+            <section key={addOn.id} className="finish-up-container-section">
+              <h1 className="selected-plan-addOn font">{addOn.name}</h1>
+              {addOn.amount}
+            </section>
+          ))}
         </div>
         <section className="total-amount-div font">
           Total (per month)
