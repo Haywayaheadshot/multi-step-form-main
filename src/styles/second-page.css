@@ -4,6 +4,10 @@
   padding-top: 10px;
 }
 
+.select-plan-child-img {
+  border: none;
+}
+
 .select-plan-child {
   border: 1px solid hsl(206, 94%, 87%);
   padding: 10px 10px;
