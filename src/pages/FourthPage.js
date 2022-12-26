@@ -6,6 +6,7 @@ import '../styles/fourth-page.css';
 
 export default function FourthPage() {
   const plans = useSelector((state) => state.plans);
+  const slicedPlans = plans.slice((plans.length - 1));
 
   const addOns = useSelector((state) => state.addOns);
   return (
@@ -16,7 +17,7 @@ export default function FourthPage() {
           Double-check everything looks OK before confirming.
         </p>
         <div className="finish-up-container">
-          { plans.map((plan) => (
+          { slicedPlans.map((plan) => (
             <section key={plan.id} className="finish-up-container-section">
               <h1 className="selected-plan font">
                 {plan.plan}
