@@ -25,7 +25,6 @@ export default function planReducer(state = defaultPlanState, action) {
     default: return state;
     case ADD_PLAN:
       return [
-        ...state,
         {
           id: action.id,
           plan: action.plan,

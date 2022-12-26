@@ -19,9 +19,9 @@ export default function ThirdPage() {
         id: 'add-on-two',
         name: 'Larger Storage',
         amount: '2',
-        value: { chosen1 },
+        value: true,
       }));
-    } else if (key.target.value === 'on') {
+    } else if (key.target.value === 'on') { // Testing just with addon 2, we have a problem.
       dispatch(removeAddOns({
         id: 'add-on-two',
       }));
@@ -36,13 +36,14 @@ export default function ThirdPage() {
         id: 'add-on-three',
         name: 'Customizable Profile',
         amount: '2',
-        value: { chosen2 },
-      }));
-    } else if (key.target.value === 'on') {
-      dispatch(removeAddOns({
-        id: 'add-on-three',
+        value: true,
       }));
     }
+    // else if (key.target.value === 'on') {
+    //   dispatch(removeAddOns({
+    //     id: 'add-on-three',
+    //   }));
+    // }
   };
 
   const handleSelectedAddOn = (key) => {
@@ -53,13 +54,14 @@ export default function ThirdPage() {
         id: 'add-on-one',
         name: 'Online Service',
         amount: '1',
-        value: { chosen },
-      }));
-    } else if (key.target.value === 'on') {
-      dispatch(removeAddOns({
-        id: 'add-on-one',
+        value: true,
       }));
     }
+    // else if (key.target.value === 'on') {
+    //   dispatch(removeAddOns({
+    //     id: 'add-on-one',
+    //   }));
+    // }
   };
 
   return (
