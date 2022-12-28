@@ -67,10 +67,10 @@ export default function SecondPage() {
           You have the option of monthly or yearly billing.
         </p>
         <div className="select-plan-container">
-          <section role="presentation" className="select-plan-child" key="sp-one" id="sp-one" onClick={handleSelectedPlan}>
-            <img role="presentation" key="sp-one" id="sp-one" src={selectPlan1} alt="Arcade Plan" />
-            <div role="presentation" key="sp-one" id="sp-one" className="plan-child-details">
-              <h2 role="presentation" key="sp-one" id="sp-one" className="plan-child-details-h2 font">Arcade</h2>
+          <section role="presentation" className="select-plan-child" id="sp-one" onClick={handleSelectedPlan}>
+            <img role="presentation" id="sp-one" src={selectPlan1} alt="Arcade Plan" />
+            <div role="presentation" id="sp-one" className="plan-child-details">
+              <h2 role="presentation" id="sp-one" className="plan-child-details-h2 font">Arcade</h2>
               { !checked && (<h4 className="plan-child-details-h4 font">$9/mo</h4>) }
               { checked && (
                 <>
@@ -80,10 +80,10 @@ export default function SecondPage() {
               ) }
             </div>
           </section>
-          <section role="presentation" className="select-plan-child" key="sp-two" id="sp-two" onClick={handleSelectedPlan}>
-            <img role="presentation" src={selectPlan2} key="sp-two" id="sp-two" alt="Advanced Plan" />
-            <div role="presentation" className="plan-child-details" key="sp-two" id="sp-two">
-              <h2 role="presentation" className="plan-child-details-h2 font" key="sp-two" id="sp-two">Advanced</h2>
+          <section role="presentation" className="select-plan-child" id="sp-two" onClick={handleSelectedPlan}>
+            <img role="presentation" src={selectPlan2} id="sp-two" alt="Advanced Plan" />
+            <div role="presentation" className="plan-child-details" id="sp-two">
+              <h2 role="presentation" className="plan-child-details-h2 font" id="sp-two">Advanced</h2>
               { !checked && (<h4 className="plan-child-details-h4 font">$12/mo</h4>) }
               { checked && (
                 <>
@@ -93,10 +93,10 @@ export default function SecondPage() {
               ) }
             </div>
           </section>
-          <section role="presentation" className="select-plan-child" key="sp-three" id="sp-three" onClick={handleSelectedPlan}>
-            <img role="presentation" src={selectPlan3} alt="Pro Plan" key="sp-three" id="sp-three" />
-            <div role="presentation" className="plan-child-details" key="sp-three" id="sp-three">
-              <h2 role="presentation" className="plan-child-details-h2 font" key="sp-three" id="sp-three">Pro</h2>
+          <section role="presentation" className="select-plan-child" id="sp-three" onClick={handleSelectedPlan}>
+            <img role="presentation" src={selectPlan3} alt="Pro Plan" id="sp-three" />
+            <div role="presentation" className="plan-child-details" id="sp-three">
+              <h2 role="presentation" className="plan-child-details-h2 font" id="sp-three">Pro</h2>
               { !checked && (<h4 className="plan-child-details-h4 font">$15/mo</h4>) }
               { checked && (
                 <>
