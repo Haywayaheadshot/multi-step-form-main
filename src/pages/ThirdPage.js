@@ -27,7 +27,7 @@ export default function ThirdPage({ chosen, chosen1, chosen2 }) {
       dispatch(addAddOns({
         id: 'add-on-two',
         name: 'Larger Storage',
-        amount: '2',
+        amount: '1',
       }));
     }
   };
@@ -39,7 +39,7 @@ export default function ThirdPage({ chosen, chosen1, chosen2 }) {
       dispatch(addAddOns({
         id: 'add-on-three',
         name: 'Customizable Profile',
-        amount: '2',
+        amount: '1',
       }));
     }
   };

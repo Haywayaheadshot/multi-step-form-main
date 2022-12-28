@@ -12,6 +12,7 @@ export const addAddOns = (payload) => ({
   id: payload.id,
   name: payload.name,
   amount: payload.amount,
+  added: payload.added,
 });
 
 export const removeAddOns = (payload) => ({
@@ -29,10 +30,10 @@ export default function addOnsReducer(state = defaultAddOnsState, action) {
           id: action.id,
           name: action.name,
           amount: action.amount,
+          added: true,
         },
       ];
     case REMOVE_ADD_ONS:
-      console.log(state, action);
       return state.filter((addOn) => addOn.id !== action.id);
   }
 }
