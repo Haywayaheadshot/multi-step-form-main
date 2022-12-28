@@ -21,6 +21,14 @@
   font-weight: 500;
 }
 
+.night .addOn-amount {
+  color:hsl(229, 24%, 87%);
+}
+
+.night .total-amount-div {
+  color:hsl(229, 24%, 87%);
+}
+
 .night .selected-plan,
 .night .selected-plan-amount {
   color: hsl(229, 24%, 87%);
