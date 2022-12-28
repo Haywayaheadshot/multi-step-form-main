@@ -49,13 +49,17 @@ export default function FourthPage() {
           { addOns.map((addOn) => (
             <section key={addOn.id} className="finish-up-container-section">
               <h1 className="selected-plan-addOn font">{addOn.name}</h1>
-              <span className="addOn-amount">{addOn.amount}</span>
+              <span className="addOn-amount">
+                +$
+                {addOn.amount}
+                /mo
+              </span>
             </section>
           ))}
         </div>
         <section className="total-amount-div font">
           Total (per month)
-          <span className="font">
+          <span className="total-amount font">
             +$
             {totalAmount}
             /month
