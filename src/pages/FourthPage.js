@@ -10,8 +10,6 @@ export default function FourthPage() {
 
   const totalAmountArr = [slicedPlans[0].amount];
 
-  // totalAmountArr.push(slicedPlans[0].amount);
-
   const addOns = useSelector((state) => state.addOns);
   for (let i = 0; i < addOns.length; i += 1) {
     totalAmountArr.push(addOns[i].amount);
@@ -21,10 +19,8 @@ export default function FourthPage() {
     return total + Math.round(num);
   }
 
-  // const totalAmount = slicedPlans[0].amount
-
   const totalAmount = totalAmountArr.reduce(getSum, 0);
-  // console.log(totalAmount);
+
   return (
     <div className="page-container">
       <section className="first-page-container">
@@ -53,7 +49,7 @@ export default function FourthPage() {
           { addOns.map((addOn) => (
             <section key={addOn.id} className="finish-up-container-section">
               <h1 className="selected-plan-addOn font">{addOn.name}</h1>
-              {addOn.amount}
+              <span className="addOn-amount">{addOn.amount}</span>
             </section>
           ))}
         </div>
