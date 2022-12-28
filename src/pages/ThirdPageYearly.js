@@ -5,16 +5,24 @@ import { addAddOns, removeAddOns } from '../redux/addOns/AddOns';
 import '../styles/third-page.css';
 
 export default function ThirdPageYearly() {
-  const data = useSelector((state) => state.addOns);
+  const plans = useSelector((state) => state.plans);
+  const addOns = useSelector((state) => state.addOns);
+
+  const addOnsError = document.getElementsByClassName('add-ons-error');
   const dispatch = useDispatch();
 
-  // useEffect(() => {
-  // });
-  if (data.length === 0) {
-    console.log('data empty');
-  } else {
-    console.log(data[0].added);
-  }
+  const backToPage2 = () => {
+    plans.length = 0;
+    // console.log(plans);
+  };
+
+  const toFourthPage = (e) => {
+    if (addOns.length === 0) {
+      e.preventDefault();
+      addOnsError[0].style.display = 'block';
+    }
+  };
+
   const handleSelectedAddOn1 = (e) => {
     if (e.target.checked === false) {
       dispatch(removeAddOns({ id: 'add-on-one' }));
@@ -58,6 +66,7 @@ export default function ThirdPageYearly() {
         <p className="first-page-info-description font">
           Add-ons help enhance your gaming experience.
         </p>
+        <h3 className="add-ons-error font">Please choose add ons</h3>
         <div className="add-ons-container">
           <section className="add-ons-child">
             <input className="third-page-checkBox" id="add-on-one-true" onClick={handleSelectedAddOn1} type="checkbox" />
@@ -92,10 +101,10 @@ export default function ThirdPageYearly() {
         </div>
       </section>
       <section className="second-page-footer">
-        <NavLink to="/secondPage">
+        <NavLink to="/secondPage" onClick={backToPage2}>
           <button className="sp-go-back-btn font" type="button">Go Back</button>
         </NavLink>
-        <NavLink to="/fourthPageYearly">
+        <NavLink to="/fourthPageYearly" onClick={toFourthPage}>
           <button className="fp-next-page-btn font" type="button">Next Step</button>
         </NavLink>
       </section>
