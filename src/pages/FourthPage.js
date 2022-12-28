@@ -21,6 +21,10 @@ export default function FourthPage() {
 
   const totalAmount = totalAmountArr.reduce(getSum, 0);
 
+  const backToPage3 = () => {
+    addOns.length = 0;
+  };
+
   return (
     <div className="page-container">
       <section className="first-page-container">
@@ -67,7 +71,7 @@ export default function FourthPage() {
         </section>
       </section>
       <section className="second-page-footer">
-        <NavLink to="/thirdPage">
+        <NavLink to="/thirdPage" onClick={backToPage3}>
           <button className="sp-go-back-btn font" type="button">Go Back</button>
         </NavLink>
         <NavLink to="/thankYou">
