@@ -19,13 +19,6 @@ export default function ThirdPage({ chosen, chosen1, chosen2 }) {
       }));
     }
   };
-  // const removeSelectedAddOn1 = () => {
-  //   if (!chosen) {
-  //     dispatch(removeAddOns({
-  //       id: 'add-on-one',
-  //     }));
-  //   }
-  // };
 
   const handleSelectedAddOn2 = (e) => {
     if (e.target.checked === false) {
