@@ -12,7 +12,7 @@ export const addAddOns = (payload) => ({
   id: payload.id,
   name: payload.name,
   amount: payload.amount,
-  added: payload.added,
+  added: false,
 });
 
 export const removeAddOns = (payload) => ({

@@ -1,12 +1,24 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import { addAddOns, removeAddOns } from '../redux/addOns/AddOns';
 import '../styles/third-page.css';
 
 export default function ThirdPage({ chosen, chosen1, chosen2 }) {
+  const data = useSelector((state) => state.addOns);
   const dispatch = useDispatch();
+
+  const checkChange = (asd) => {
+    console.log(asd);
+  };
+
+  console.log(data);
+  if (data.length === 0) {
+    console.log('data empty');
+  } else {
+    console.log(data[0].added);
+  }
 
   const handleSelectedAddOn1 = (e) => {
     if (e.target.checked === false) {
@@ -54,7 +66,7 @@ export default function ThirdPage({ chosen, chosen1, chosen2 }) {
         <div className="add-ons-container">
           <section className="add-ons-child" key="add-on-one">
             <>
-              { !chosen && (<input className="third-page-checkBox" onClick={handleSelectedAddOn1} type="checkbox" />)}
+              { !chosen && (<input className="third-page-checkBox" id="add-on-one-true" onClick={handleSelectedAddOn1} type="checkbox" />)}
             </>
             <div className="add-ons-package">
               <h2 className="add-ons-package-h2 font">Online service</h2>
@@ -65,7 +77,7 @@ export default function ThirdPage({ chosen, chosen1, chosen2 }) {
             </div>
           </section>
           <section className="add-ons-child" key="add-on-two">
-            { !chosen1 && (<input className="third-page-checkBox" id="add-on-two-true" key="add-on-two-true" onClick={handleSelectedAddOn2} type="checkbox" />)}
+            { !chosen1 && (<input className="third-page-checkBox" onChange={checkChange} id="add-on-two-true" key="add-on-two-true" onClick={handleSelectedAddOn2} type="checkbox" />)}
             <div className="add-ons-package">
               <h2 className="add-ons-package-h2 font">Larger storage</h2>
               <h4 className="add-ons-package-h4 font">Extra 1TB of cloud save</h4>
