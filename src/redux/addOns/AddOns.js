@@ -32,8 +32,7 @@ export default function addOnsReducer(state = defaultAddOnsState, action) {
         },
       ];
     case REMOVE_ADD_ONS:
-      return [
-        state.filter((addOn) => addOn.id !== action.id),
-      ];
+      console.log(state, action);
+      return state.filter((addOn) => addOn.id !== action.id);
   }
 }

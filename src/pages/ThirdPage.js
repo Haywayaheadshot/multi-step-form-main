@@ -8,49 +8,47 @@ import '../styles/third-page.css';
 export default function ThirdPage({ chosen, chosen1, chosen2 }) {
   const dispatch = useDispatch();
 
-  const handleSelectedAddOn1 = () => {
-    dispatch(addAddOns({
-      id: 'add-on-one',
-      name: 'Online service',
-      amount: '1',
-    }, []));
-  };
-
-  const removeSelectedAddOn1 = () => {
-    if (!chosen) {
-      dispatch(removeAddOns({
+  const handleSelectedAddOn1 = (e) => {
+    if (e.target.checked === false) {
+      dispatch(removeAddOns({ id: 'add-on-one' }));
+    } else {
+      dispatch(addAddOns({
         id: 'add-on-one',
+        name: 'Online service',
+        amount: '1',
+      }));
+    }
+  };
+  // const removeSelectedAddOn1 = () => {
+  //   if (!chosen) {
+  //     dispatch(removeAddOns({
+  //       id: 'add-on-one',
+  //     }));
+  //   }
+  // };
+
+  const handleSelectedAddOn2 = (e) => {
+    if (e.target.checked === false) {
+      dispatch(removeAddOns({ id: 'add-on-two' }));
+    } else {
+      dispatch(addAddOns({
+        id: 'add-on-two',
+        name: 'Larger Storage',
+        amount: '2',
       }));
     }
   };
 
-  const handleSelectedAddOn2 = () => {
-    console.log(key)
-    dispatch(addAddOns({
-      id: 'add-on-two',
-      name: 'Larger Storage',
-      amount: '2',
-    }));
-  };
-
-  const removeSelectedAddOn2 = () => {
-    dispatch(removeAddOns({
-      id: 'add-on-two',
-    }));
-  };
-
-  const handleSelectedAddOn3 = () => {
-    dispatch(addAddOns({
-      id: 'add-on-three',
-      name: 'Customizable Profile',
-      amount: '2',
-    }));
-  };
-
-  const removeSelectedAddOn3 = () => {
-    dispatch(removeAddOns({
-      id: 'add-on-three',
-    }));
+  const handleSelectedAddOn3 = (e) => {
+    if (e.target.checked === false) {
+      dispatch(removeAddOns({ id: 'add-on-three' }));
+    } else {
+      dispatch(addAddOns({
+        id: 'add-on-three',
+        name: 'Customizable Profile',
+        amount: '2',
+      }));
+    }
   };
 
   return (
@@ -64,7 +62,6 @@ export default function ThirdPage({ chosen, chosen1, chosen2 }) {
           <section className="add-ons-child" key="add-on-one">
             <>
               { !chosen && (<input className="third-page-checkBox" onClick={handleSelectedAddOn1} type="checkbox" />)}
-              { chosen && (<input className="third-page-checkBox" onClick={removeSelectedAddOn1} type="checkbox" />)}
             </>
             <div className="add-ons-package">
               <h2 className="add-ons-package-h2 font">Online service</h2>
@@ -76,7 +73,6 @@ export default function ThirdPage({ chosen, chosen1, chosen2 }) {
           </section>
           <section className="add-ons-child" key="add-on-two">
             { !chosen1 && (<input className="third-page-checkBox" id="add-on-two-true" key="add-on-two-true" onClick={handleSelectedAddOn2} type="checkbox" />)}
-            { chosen1 && (<input id="add-on-two-false" key="add-on-two-false" onClick={removeSelectedAddOn2} type="checkbox" />)}
             <div className="add-ons-package">
               <h2 className="add-ons-package-h2 font">Larger storage</h2>
               <h4 className="add-ons-package-h4 font">Extra 1TB of cloud save</h4>
@@ -89,7 +85,6 @@ export default function ThirdPage({ chosen, chosen1, chosen2 }) {
             {/* <input className="third-page-checkBox" key="add-on-three"
             type="checkbox" defaultChecked /> */}
             { !chosen2 && (<input className="third-page-checkBox" id="add-on-three-true" key="add-on-three-true" onClick={handleSelectedAddOn3} type="checkbox" />)}
-            { chosen2 && (<input className="third-page-checkBox" id="add-on-three-false" key="add-on-three-false" onClick={removeSelectedAddOn3} type="checkbox" />)}
             <div className="add-ons-package">
               <h2 className="add-ons-package-h2 font">Customizable Profile</h2>
               <h4 className="add-ons-package-h4 font">Custom theme on your profile</h4>
