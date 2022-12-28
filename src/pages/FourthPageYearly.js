@@ -22,6 +22,10 @@ export default function FourthPageYearly() {
 
   const totalAmount = totalAmountArr.reduce(getSum, 0);
 
+  const backToPage3 = () => {
+    addOns.length = 0;
+  };
+
   return (
     <div className="page-container">
       <section className="first-page-container">
@@ -68,7 +72,7 @@ export default function FourthPageYearly() {
         </section>
       </section>
       <section className="second-page-footer">
-        <NavLink to="/thirdPageYearly">
+        <NavLink to="/thirdPageYearly" onClick={backToPage3}>
           <button className="sp-go-back-btn font" type="button">Go Back</button>
         </NavLink>
         <NavLink to="/thankYou">
