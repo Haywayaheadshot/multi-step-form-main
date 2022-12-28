@@ -8,8 +8,6 @@ export default function ThirdPage() {
   const data = useSelector((state) => state.addOns);
   const dispatch = useDispatch();
 
-  // useEffect(() => {
-  // });
   if (data.length === 0) {
     console.log('data empty');
   } else {
@@ -82,8 +80,6 @@ export default function ThirdPage() {
             </div>
           </section>
           <section className="add-ons-child" key="add-on-three">
-            {/* <input className="third-page-checkBox" key="add-on-three"
-            type="checkbox" defaultChecked /> */}
             <input className="third-page-checkBox" id="add-on-three-true" key="add-on-three-true" onClick={handleSelectedAddOn3} type="checkbox" />
             <div className="add-ons-package">
               <h2 className="add-ons-package-h2 font">Customizable Profile</h2>
