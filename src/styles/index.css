@@ -31,3 +31,21 @@ code {
 .font {
   font-family: 'Ubuntu', sans-serif;
 }
+
+.name-error,
+.phone-number-error,
+.email-error,
+.choose-plan-error,
+.add-ons-error {
+  display: none;
+  margin: -30px 0 0 0;
+  padding: 0 10px;
+  border: 1px dashed red;
+  color: red;
+  background: hsl(231, 11%, 63%);
+}
+
+.choose-plan-error,
+.add-ons-error {
+  margin: 0;
+}
