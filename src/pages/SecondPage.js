@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import '../styles/second-page.css';
 import selectPlan1 from '../assets/images/icon-arcade.svg';
 import selectPlan2 from '../assets/images/icon-advanced.svg';
@@ -10,6 +10,17 @@ import { addPlan } from '../redux/confirmOrder/ConfirmOrder';
 export default function SecondPage() {
   const [checked, setChecked] = useState();
   const dispatch = useDispatch();
+
+  const plans = useSelector((state) => state.plans);
+
+  const planError = document.getElementsByClassName('choose-plan-error');
+
+  const toThirdPage = (e) => {
+    if (plans.length === 0) {
+      e.preventDefault();
+      planError[0].style.display = 'block';
+    }
+  };
 
   const handleSelectedPlan = (key) => {
     if (key.target.id) {
@@ -66,6 +77,7 @@ export default function SecondPage() {
         <p className="first-page-info-description font">
           You have the option of monthly or yearly billing.
         </p>
+        <h3 className="choose-plan-error font">Please Choose A Plan</h3>
         <div className="select-plan-container">
           <section role="presentation" className="select-plan-child" id="sp-one" onClick={handleSelectedPlan}>
             <img role="presentation" id="sp-one" src={selectPlan1} alt="Arcade Plan" />
@@ -126,12 +138,12 @@ export default function SecondPage() {
           <button className="sp-go-back-btn font" type="button">Go Back</button>
         </NavLink>
         { !checked && (
-        <NavLink to="/thirdPage">
+        <NavLink to="/thirdPage" onClick={toThirdPage}>
           <button className="fp-next-page-btn font" type="button">Next Step</button>
         </NavLink>
         ) }
         { checked && (
-        <NavLink to="/thirdPageYearly">
+        <NavLink to="/thirdPageYearly" onClick={toThirdPage}>
           <button className="fp-next-page-btn font" type="button">Next Step</button>
         </NavLink>
         ) }
