@@ -25,10 +25,6 @@
   color:hsl(229, 24%, 87%);
 }
 
-.night .total-amount-div {
-  color:hsl(229, 24%, 87%);
-}
-
 .night .selected-plan,
 .night .selected-plan-amount {
   color: hsl(229, 24%, 87%);
@@ -62,6 +58,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 20px;
+}
+
+.night .total-amount-div {
+  color:hsl(229, 24%, 87%);
 }
 
 .lp-confirm-btn {
