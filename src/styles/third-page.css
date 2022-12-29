@@ -10,8 +10,6 @@
   border: 1px solid hsl(206, 94%, 87%);
   border-radius: 5px;
   padding: 10px 20px 10px 0;
-
-  /* height: max-content; */
 }
 
 .third-page-checkBox {
@@ -59,4 +57,38 @@
   color: hsl(243, 100%, 62%);
 
   /* display: none; */
+}
+
+@media (min-width: 745px) {
+  .add-ons-package {
+    display: grid;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .add-ons-package-h4 {
+    color: hsl(231, 11%, 63%);
+    font-size: 1rem;
+  }
+
+  .add-ons-child {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr 1fr;
+    place-content: center;
+    border: 1px solid hsl(206, 94%, 87%);
+    border-radius: 5px;
+    padding: 10px 20px 10px 0;
+    min-height: 6vw;
+  }
+
+  .add-ons-child:active {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr 1fr;
+    place-content: center;
+    border: 1px solid hsl(206, 94%, 87%);
+    background-color: hsl(217, 100%, 97%);
+    border-radius: 5px;
+    padding: 10px 20px 10px 0;
+    min-height: 6vw;
+  }
 }
