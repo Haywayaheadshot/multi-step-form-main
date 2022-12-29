@@ -90,3 +90,10 @@
   color: hsl(0, 0%, 100%);
   background-color: hsl(213, 96%, 18%);
 }
+
+@media (min-width: 745px) {
+  .finish-up-container {
+    border-radius: 10px;
+    padding-bottom: 30px;
+  }
+}
