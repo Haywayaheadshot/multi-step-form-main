@@ -80,7 +80,8 @@
 @media (min-width: 745px) {
   .page-container {
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 30px;
+    min-width: 50vw;
   }
 
   .first-page-container {
