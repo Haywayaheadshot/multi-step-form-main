@@ -68,3 +68,17 @@
 /* .switch-input:checked + .switch-slider {
     background-color: hsl(213, 96%, 18%);
 } */
+
+@media (min-width: 745px) {
+  .night .switch-label-app {
+    background-color: hsl(229, 24%, 87%);
+  }
+
+  .night .switch-slider-app::before {
+    background-color: hsl(213, 96%, 18%);
+  }
+
+  .day {
+    background-color: hsl(0, 0%, 100%);
+  }
+}
