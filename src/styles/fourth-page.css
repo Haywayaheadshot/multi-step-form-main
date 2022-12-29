@@ -84,6 +84,7 @@
   padding: 20px 15px;
   border-radius: 5px;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .night .lp-confirm-btn {

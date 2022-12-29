@@ -80,6 +80,7 @@
   border-radius: 5px;
   font-size: 1.2rem;
   margin-left: 15px;
+  cursor: pointer;
 }
 
 .night .sp-go-back-btn {
@@ -95,6 +96,7 @@
   flex-direction: row;
   gap: 20px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .night .select-plan-child:hover {
