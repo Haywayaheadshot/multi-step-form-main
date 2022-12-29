@@ -16,8 +16,6 @@
   background: url(../assets/images/bg-sidebar-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
-
-  /* min-width: 100vw; */
   min-height: 20vh;
 }
 
@@ -41,17 +39,64 @@
   color: hsl(213, 96%, 18%);
 }
 
-/* .nav-bar-btns:active {
-  padding: 10px 15px;
-  border-radius: 50%;
-  border: 1px solid hsl(231, 11%, 63%);
-  background-color: hsl(206, 94%, 87%);
-  color: hsl(213, 96%, 18%);
-} */
-
 .active .nav-bar-btns {
   border-radius: 50%;
   border: 1px solid hsl(231, 11%, 63%);
   background-color: hsl(206, 94%, 87%);
   color: hsl(213, 96%, 18%);
+}
+
+.for-desk {
+  display: none;
+}
+
+@media (min-width: 745px) {
+  .for-desk {
+    display: block;
+  }
+
+  .nav-bar-container {
+    background: url(../assets/images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 28vw;
+    min-height: 95vh;
+    border-radius: 15px;
+  }
+
+  .nav-bar-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 50px;
+  }
+
+  .nav-bar-btns {
+    max-height: 50px;
+  }
+
+  .desk-nav-btn-head,
+  .desk-nav-btn-desc {
+    margin: 0;
+    padding: 0;
+  }
+
+  .desk-nav-btn-head {
+    color: hsl(231, 11%, 63%);
+  }
+
+  .desk-nav-btn-desc {
+    color: hsl(0, 0%, 100%);
+  }
+
+  .nav-bar-ul-li {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    place-items: start;
+    grid-template-columns: 1fr 5fr;
+    gap: 20px;
+  }
 }

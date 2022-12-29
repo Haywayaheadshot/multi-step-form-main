@@ -11,8 +11,6 @@ export default function FirstPage() {
   const emailError = document.getElementsByClassName('email-error');
   const phoneNumError = document.getElementsByClassName('phone-number-error');
 
-  // const phoneRegEx = /^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/;
-
   const nameHandler = (e) => {
     setName(e.target.value);
   };

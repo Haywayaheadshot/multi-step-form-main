@@ -22,10 +22,6 @@
 .thank-you-description {
   text-align: center;
   padding: 0 30px;
-
-  /* background-color: red; */
-
-  /* max-width: 250px; */
   font-size: 1.2rem;
 }
 
@@ -38,4 +34,25 @@
   margin: 5vh 0 -40px 0;
   padding: 10px 15px;
   font-size: 0.8rem;
+}
+
+@media (min-width: 745px) {
+  .thank-you-container {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: inherit;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+  }
+
+  .thank-you-description {
+    text-align: center;
+    padding: 0 30px;
+    font-size: 1.6rem;
+  }
 }
