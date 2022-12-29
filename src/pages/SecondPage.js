@@ -118,20 +118,20 @@ export default function SecondPage() {
               ) }
             </div>
           </section>
-          <section className="select-plan-child">
-            <h4>Monthly</h4>
-            <label htmlFor="switch" className="switch-label">
-              <input
-                onClick={() => setChecked((checked) => !checked)}
-                className="switch-input"
-                id="switch"
-                type="checkbox"
-              />
-              <span className="switch-slider" />
-            </label>
-            <h4>Yearly</h4>
-          </section>
         </div>
+        <section className="monthly-yearly-choice">
+          <h4 className="font">Monthly</h4>
+          <label htmlFor="switch" className="switch-label">
+            <input
+              onClick={() => setChecked((checked) => !checked)}
+              className="switch-input"
+              id="switch"
+              type="checkbox"
+            />
+            <span className="switch-slider" />
+          </label>
+          <h4 className="font">Yearly</h4>
+        </section>
       </section>
       <section className="second-page-footer">
         <NavLink to="/">
