@@ -8,8 +8,11 @@ ul {
   padding: 0;
 }
 
-/* .App-main {
-  margin-top: -19px;
-  background-color: hsl(206, 94%, 87%);
-  padding: 0 20px;
-} */
+@media (min-width: 640px) {
+  .App {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+}
