@@ -4,6 +4,10 @@
   padding-top: 10px;
 }
 
+.select-plan-child-img {
+  border: none;
+}
+
 .select-plan-child {
   border: 1px solid hsl(206, 94%, 87%);
   padding: 10px 10px;
@@ -25,8 +29,20 @@
   font-weight: 500;
 }
 
+.night .plan-child-details-h2 {
+  color: hsl(206, 94%, 87%);
+}
+
+.night .select-plan-child:hover .plan-child-details-h2 {
+  color: hsl(354, 84%, 57%);
+}
+
 .plan-child-details-h4 {
   color: hsl(231, 11%, 63%);
+}
+
+.night .select-plan-child:hover .plan-child-details-h4 {
+  color: hsl(213, 96%, 18%);
 }
 
 .select-plan-child:nth-child(4) {
@@ -51,6 +67,11 @@
   padding: 40px 0;
 }
 
+.night .second-page-footer {
+  background-color: rgb(20, 15, 15);
+  border-top: 1px solid hsl(0, 0%, 100%);
+}
+
 .sp-go-back-btn {
   background-color: #fff;
   color: hsl(213, 96%, 18%);
@@ -59,6 +80,11 @@
   border-radius: 5px;
   font-size: 1.2rem;
   margin-left: 15px;
+}
+
+.night .sp-go-back-btn {
+  background-color: rgb(20, 15, 15);
+  color: hsl(0, 0%, 100%);
 }
 
 .select-plan-child:hover {
@@ -71,8 +97,71 @@
   border-radius: 5px;
 }
 
+.night .select-plan-child:hover {
+  background-color: hsl(229, 24%, 87%);
+}
+
+.night .select-plan-child:nth-child(4) {
+  background-color: hsl(231, 11%, 63%);
+}
+
 .yearly-discount {
   /* display: none; */
   color: hsl(228, 100%, 84%);
   font-weight: 400;
 }
+
+.night .select-plan-child:hover .yearly-discount {
+  color: hsl(213, 96%, 18%);
+}
+
+.switch-label {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 20px;
+  background-color: hsl(213, 96%, 18%);
+  border-radius: 30px;
+}
+
+.switch-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.switch-slider::before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  top: 4px;
+  background-color: hsl(0, 0%, 100%);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.switch-input:checked + .switch-slider {
+  position: relative;
+  height: 30px;
+  width: 26px;
+  left: 28px;
+  border-radius: 50%;
+  background-color: hsl(0, 0%, 100%);
+  transition: 0.4s;
+}
+
+/* .switch-input:checked + .switch-slider {
+    background-color: hsl(213, 96%, 18%);
+} */

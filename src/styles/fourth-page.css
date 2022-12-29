@@ -4,13 +4,76 @@
 }
 
 .finish-up-container {
-  background-color: red;
+  background-color: hsl(229, 24%, 87%);
+  padding: 3px 20px;
+}
+
+.night .finish-up-container {
+  background-color: hsl(213, 96%, 18%);
+}
+
+.selected-plan {
+  color: hsl(213, 96%, 18%);
+}
+
+.selected-plan-amount {
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+}
+
+.addOn-amount {
+  font-weight: 600;
+  color: hsl(213, 96%, 18%);
+}
+
+.night .addOn-amount {
+  color: hsl(229, 24%, 87%);
+}
+
+.night .selected-plan,
+.night .selected-plan-amount {
+  color: hsl(229, 24%, 87%);
+}
+
+.selected-plan-change {
+  color: hsl(231, 11%, 63%);
+}
+
+.selected-plan-addOn {
+  color: hsl(231, 11%, 63%);
+  font-weight: 400;
+}
+
+.night .selected-plan-addOn {
+  color: hsl(217, 100%, 97%);
+}
+
+.finish-up-container-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.finish-up-container-section:nth-child(1) {
+  border-bottom: 1px solid hsl(231, 11%, 63%);
 }
 
 .total-amount-div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 20px 15px 0 18px;
+}
+
+.total-amount {
+  color: hsl(243, 100%, 62%);
+  font-weight: 700;
+}
+
+.night .total-amount-div,
+.night .total-amount {
+  color: hsl(229, 24%, 87%);
 }
 
 .lp-confirm-btn {
@@ -21,4 +84,9 @@
   padding: 20px 15px;
   border-radius: 5px;
   font-size: 1.2rem;
+}
+
+.night .lp-confirm-btn {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(213, 96%, 18%);
 }
