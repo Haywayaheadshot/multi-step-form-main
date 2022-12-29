@@ -55,3 +55,14 @@
   background-color: hsl(206, 94%, 87%);
   color: hsl(213, 96%, 18%);
 }
+
+@media (min-width: 375px) {
+  .nav-bar-container {
+    background: url(../assets/images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    max-width: 30vw;
+    min-height: 80vh;
+  }
+}
