@@ -71,7 +71,7 @@ To get a local copy up and running, follow these steps.
 >### Setup
 
 - Clone this [repository](https://github.com/Haywayaheadshot/multi-step-form-main.git) to your desired folder.
-- Access `cd financial-modelling`
+- Access `cd multi-step-form-main`
 
 
 >### Install
