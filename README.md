@@ -27,30 +27,37 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Crypto Display Project <a name="about-project"></a>
+# 📖 Multi Step Form <a name="about-project"></a>
 
-> You can see the top 5 crytocurrencies and get more information about them when you click on them.
+The challenge is to build out this multi-step form and get it looking as close to the design as possible.
+
+Users should be able to:
+
+- Complete each step of the sequence
+- See a summary of their selections on the final step and confirm their order
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
 
 <!-- Features -->
 
-
+- **JSX**
+- **CSS**
 - **React**
 - **Redux**
-- **Jest**
 - **Linters**
 - **GitFlow**
+- **Github**
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://fluffy-sherbet-58b340.netlify.app/)
-
-- [Live Video Link](https://www.loom.com/share/f09c3fe471e746a69edb4bb6a5bc38ba)
+- [Live Demo Link](https://haywaya-multi-step-form.netlify.app/)
 
 <!-- GETTING STARTED -->
 
@@ -63,7 +70,7 @@ To get a local copy up and running, follow these steps.
  - Node.js
 >### Setup
 
-- Clone this [repository](https://github.com/Haywayaheadshot/financial-modelling.git) to your desired folder.
+- Clone this [repository](https://github.com/Haywayaheadshot/multi-step-form-main.git) to your desired folder.
 - Access `cd financial-modelling`
 
 
@@ -73,11 +80,7 @@ To get a local copy up and running, follow these steps.
 
 >### Usage
 
-- Execute `npm run`
-
->### Run tests
-
-- Execute `npm test`
+- Execute `npm start`
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -85,19 +88,23 @@ To get a local copy up and running, follow these steps.
 
 
 I would like to thank,
-- [Original Author Behance Link](https://www.behance.net/sakwadesignstudio)
-- Thanks to Microverse for the knowledge impacted
-- Thanks to my colleagues, [Diego Garcia](https://github.com/taldr27) and [Jose Zepada](https://github.com/J2ZROMERO)
+- Microverse for the knowledge impacted
+- [Fron end mentor](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ/hub) for the challenge
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
-👤 **Author**
+👤 **Abubakar Ummar**
 
 - GitHub: [@Haywayaheadshot](https://github.com/Haywayaheadshot)
 - Twitter: [@haywayalive](https://twitter.com/haywayalive)
 - LinkedIn: [Abubakar Ummar](https://www.linkedin.com/in/abubakar-ummar/)
+
+👤 **Diego Garcia**
+
+- GitHub: [@taldr27](https://github.com/taldr27)
+- LinkedIn: [Diego Garcia](https://www.linkedin.com/in/diegogarcial/)
 
 Contributions, issues, and feature requests are welcome!
 
@@ -111,10 +118,10 @@ Feel free to check the [issues page](../../issues/).
 
 <!-- LICENSE -->
 
-## 📝 License <a name="license"></a>
+<!-- ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._ -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p><a name="readme-top"></a>
