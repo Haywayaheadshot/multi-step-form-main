@@ -37,6 +37,11 @@
   cursor: pointer;
 }
 
+.thank-you-page-container {
+  margin-top: -80px;
+  background-color: inherit;
+}
+
 @media (min-width: 745px) {
   .thank-you-container {
     border: none;
@@ -55,5 +60,11 @@
     text-align: center;
     padding: 0 30px;
     font-size: 1.6rem;
+  }
+
+  .thank-you-page-container {
+    margin: 0;
+    padding: 0 0 0 30px;
+    min-width: 50vw;
   }
 }
