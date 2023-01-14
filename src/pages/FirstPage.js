@@ -44,7 +44,7 @@ export default function FirstPage() {
   };
 
   return (
-    <div className="page-container">
+    <div className="thank-you-page-container">
       <section className="first-page-container">
         <h1 className="first-page-header font">Personal info</h1>
         <p className="first-page-info-description font">
