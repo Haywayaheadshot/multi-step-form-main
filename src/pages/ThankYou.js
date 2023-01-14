@@ -14,7 +14,7 @@ export default function ThankYou() {
   };
 
   return (
-    <div className="page-container">
+    <div className="thank-you-page-container">
       <section className="thank-you-container">
         <img src={thankYou} alt="Thank You" />
         <h1 className="thank-you-header font">Thank you!</h1>
