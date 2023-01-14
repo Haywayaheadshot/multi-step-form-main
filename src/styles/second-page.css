@@ -1,3 +1,9 @@
+.page-container {
+  margin-top: -80px;
+  background-color: inherit;
+  padding-bottom: 150px;
+}
+
 .select-plan-container {
   display: grid;
   gap: 10px;
@@ -165,6 +171,12 @@
 }
 
 @media (min-width: 745px) {
+  .page-container {
+    margin: 0;
+    padding: 0 0 0 30px;
+    min-width: 50vw;
+  }
+
   .select-plan-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

@@ -1,7 +1,6 @@
-.page-container {
+.thank-you-page-container {
   margin-top: -80px;
   background-color: inherit;
-  padding-bottom: 150px;
 }
 
 .first-page-container {
@@ -80,7 +79,7 @@
 }
 
 @media (min-width: 745px) {
-  .page-container {
+  .thank-you-page-container {
     margin: 0;
     padding: 0 0 0 30px;
     min-width: 50vw;
